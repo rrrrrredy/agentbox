@@ -15,6 +15,29 @@ AgentBox lets you package and share complete AI agent environments. Think of it 
 - User wants to backup or migrate their settings to another machine
 - User asks about portable agent configurations
 
+## When not to use this
+
+- Do not use for general project backups that do not involve agent configuration.
+- Do not use to move secrets, raw API keys, browser profiles, cookies, or private tokens.
+- Do not import a bundle directly into live settings until preview files have been reviewed.
+- Do not treat a bundle as trusted just because it came from a teammate; inspect generated previews and security audit output first.
+
+## Required inputs
+
+- Export: current project path and desired `.agentbox` output filename.
+- Import: path to a `.agentbox` bundle and the target project directory.
+- Review: path to an existing `.agentbox` bundle or `.agentbox/preview/` directory.
+
+## Output contract
+
+Return a concise report with:
+
+- command executed;
+- generated bundle or preview path;
+- included configuration categories;
+- redaction/security-audit summary;
+- missing bindings or manual follow-up actions.
+
 ## Quick Start
 
 AgentBox is available via npx - no installation needed:
