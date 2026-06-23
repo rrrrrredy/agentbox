@@ -104,6 +104,8 @@ git clone https://github.com/1zhangyy1/agentbox.git
 cp -r agentbox/skills/agentbox /path/to/your/project/.claude/skills/
 ```
 
+技能来源布局：`skills/agentbox/SKILL.md` 是 canonical skill；`.claude/skills/agentbox/SKILL.md` 是为了兼容 Claude Code 项目布局保留的镜像副本。单个 skill root 中只安装其中一份，编辑时保持镜像与 canonical 文件同步。
+
 **安装后，只需说：**
 - "导出我当前的配置"
 - "导入那个智能体配置"

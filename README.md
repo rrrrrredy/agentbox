@@ -104,6 +104,8 @@ git clone https://github.com/1zhangyy1/agentbox.git
 cp -r agentbox/skills/agentbox /path/to/your/project/.claude/skills/
 ```
 
+Skill source layout: `skills/agentbox/SKILL.md` is the canonical skill. `.claude/skills/agentbox/SKILL.md` is a compatibility mirror for Claude Code-style project layouts. Install only one copy into a single skill root, and keep the mirror synchronized with the canonical file when editing.
+
 **Once installed, just say:**
 - "Export my current setup"
 - "Import that agent config"
